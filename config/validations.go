@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/asobti/kube-monkey/config/param"
+	"github.com/BitRacer/kube-monkey/config/param"
 )
 
 func ValidateConfigs() error {

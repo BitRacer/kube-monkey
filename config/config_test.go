@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/asobti/kube-monkey/config/param"
+	"github.com/BitRacer/kube-monkey/config/param"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/suite"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

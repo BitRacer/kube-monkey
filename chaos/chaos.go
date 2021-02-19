@@ -6,9 +6,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/asobti/kube-monkey/config"
-	"github.com/asobti/kube-monkey/kubernetes"
-	"github.com/asobti/kube-monkey/victims"
+	"github.com/BitRacer/kube-monkey/config"
+	"github.com/BitRacer/kube-monkey/kubernetes"
+	"github.com/BitRacer/kube-monkey/victims"
 
 	kube "k8s.io/client-go/kubernetes"
 )

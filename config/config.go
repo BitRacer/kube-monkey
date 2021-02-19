@@ -8,7 +8,7 @@ import (
 	"github.com/golang/glog"
 	"github.com/spf13/viper"
 
-	"github.com/asobti/kube-monkey/config/param"
+	"github.com/BitRacer/kube-monkey/config/param"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/sets"

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/asobti/kube-monkey/chaos"
-	"github.com/asobti/kube-monkey/config"
-	"github.com/asobti/kube-monkey/schedule"
+	"github.com/BitRacer/kube-monkey/chaos"
+	"github.com/BitRacer/kube-monkey/config"
+	"github.com/BitRacer/kube-monkey/schedule"
 	"github.com/golang/glog"
 )
 

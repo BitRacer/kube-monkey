@@ -1,6 +1,6 @@
 # Kube-Monkey Helm Chart
 
-[Kube-Monkey](https://github.com/asobti/kube-monkey) periodically kills pods in your Kubernetes cluster,that are opt-in based on their own rules.
+[Kube-Monkey](https://github.com/BitRacer/kube-monkey) periodically kills pods in your Kubernetes cluster,that are opt-in based on their own rules.
 
 ## Official Helm
 
@@ -11,7 +11,7 @@ TBA to official helm charts,There is no official helm chart yet for kube-monkey.
 To install the chart with the release name `my-release`:
 
 ```console
-$ git clone https://github.com/asobti/kube-monkey
+$ git clone https://github.com/BitRacer/kube-monkey
 $ cd kube-monkey/helm
 $ helm install --name my-release kubemonkey
 ```

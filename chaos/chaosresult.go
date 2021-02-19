@@ -1,7 +1,7 @@
 package chaos
 
 import (
-	"github.com/asobti/kube-monkey/victims"
+	"github.com/BitRacer/kube-monkey/victims"
 )
 
 type Result struct {

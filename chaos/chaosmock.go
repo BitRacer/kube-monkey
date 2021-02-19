@@ -3,7 +3,7 @@ package chaos
 import (
 	"time"
 
-	"github.com/asobti/kube-monkey/victims"
+	"github.com/BitRacer/kube-monkey/victims"
 	"github.com/stretchr/testify/mock"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	kube "k8s.io/client-go/kubernetes"

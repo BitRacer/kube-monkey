@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/asobti/kube-monkey/chaos"
-	"github.com/asobti/kube-monkey/config/param"
+	"github.com/BitRacer/kube-monkey/chaos"
+	"github.com/BitRacer/kube-monkey/config/param"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/asobti/kube-monkey/config"
+	"github.com/BitRacer/kube-monkey/config"
 )
 
 func newSchedule() *Schedule {

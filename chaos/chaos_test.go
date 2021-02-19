@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/asobti/kube-monkey/config"
+	"github.com/BitRacer/kube-monkey/config"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 
@@ -146,7 +146,7 @@ func (s *ChaosTestSuite) TestGetKillValueReturnsError() {
 }
 
 // Disabling test
-// See https://github.com/asobti/kube-monkey/issues/126
+// See https://github.com/BitRacer/kube-monkey/issues/126
 //func (s *ChaosTestSuite) TestDurationToKillTime() {
 //	t := s.chaos.DurationToKillTime()
 //	s.WithinDuration(s.chaos.KillAt(), time.Now(), t+time.Millisecond)

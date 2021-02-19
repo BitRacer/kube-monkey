@@ -3,7 +3,7 @@ package daemonsets
 import (
 	"testing"
 
-	"github.com/asobti/kube-monkey/config"
+	"github.com/BitRacer/kube-monkey/config"
 	"github.com/stretchr/testify/assert"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/fake"

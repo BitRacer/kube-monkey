@@ -3,7 +3,7 @@ package config
 import (
 	"testing"
 
-	"github.com/asobti/kube-monkey/config/param"
+	"github.com/BitRacer/kube-monkey/config/param"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 )

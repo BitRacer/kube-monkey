@@ -6,12 +6,12 @@ import (
 
 	"github.com/golang/glog"
 
-	"github.com/asobti/kube-monkey/calendar"
-	"github.com/asobti/kube-monkey/chaos"
-	"github.com/asobti/kube-monkey/config"
-	"github.com/asobti/kube-monkey/kubernetes"
-	"github.com/asobti/kube-monkey/notifications"
-	"github.com/asobti/kube-monkey/schedule"
+	"github.com/BitRacer/kube-monkey/calendar"
+	"github.com/BitRacer/kube-monkey/chaos"
+	"github.com/BitRacer/kube-monkey/config"
+	"github.com/BitRacer/kube-monkey/kubernetes"
+	"github.com/BitRacer/kube-monkey/notifications"
+	"github.com/BitRacer/kube-monkey/schedule"
 )
 
 func durationToNextRun(runhour int, loc *time.Location) time.Duration {

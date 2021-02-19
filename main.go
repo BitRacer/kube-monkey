@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/asobti/kube-monkey/config"
-	"github.com/asobti/kube-monkey/kubemonkey"
+	"github.com/BitRacer/kube-monkey/config"
+	"github.com/BitRacer/kube-monkey/kubemonkey"
 	"github.com/golang/glog"
 	"os"
 )

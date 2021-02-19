@@ -11,7 +11,7 @@ import (
 
 	"github.com/golang/glog"
 
-	cfg "github.com/asobti/kube-monkey/config"
+	cfg "github.com/BitRacer/kube-monkey/config"
 
 	"k8s.io/client-go/discovery"
 	kube "k8s.io/client-go/kubernetes"

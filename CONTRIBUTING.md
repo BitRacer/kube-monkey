@@ -3,7 +3,7 @@ Install go 1.15
 
 Fork the project on github and install golang
 ```bash
-go get github.com/asobti/kube-monkey
+go get github.com/BitRacer/kube-monkey
 git remote rename origin upstream
 git remote add origin https://github.com/<YOURUSERNAME>/kube-monkey
 git checkout --track -b feature/branchname

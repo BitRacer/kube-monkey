@@ -1,4 +1,4 @@
-module github.com/asobti/kube-monkey
+module github.com/BitRacer/kube-monkey
 
 go 1.15
 

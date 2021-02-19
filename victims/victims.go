@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/asobti/kube-monkey/config"
+	"github.com/BitRacer/kube-monkey/config"
 	"github.com/golang/glog"
 	"github.com/pkg/errors"
 

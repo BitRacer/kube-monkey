@@ -1,4 +1,4 @@
-# kube-monkey [![Build Status](https://travis-ci.org/asobti/kube-monkey.svg?branch=master)](https://travis-ci.org/asobti/kube-monkey) [![Go Report](https://goreportcard.com/badge/github.com/asobti/kube-monkey)](https://goreportcard.com/report/github.com/asobti/kube-monkey)
+# kube-monkey [![Build Status](https://travis-ci.org/BitRacer/kube-monkey.svg?branch=master)](https://travis-ci.org/BitRacer/kube-monkey) [![Go Report](https://goreportcard.com/badge/github.com/BitRacer/kube-monkey)](https://goreportcard.com/report/github.com/BitRacer/kube-monkey)
 
 kube-monkey is an implementation of [Netflix's Chaos Monkey](https://github.com/Netflix/chaosmonkey) for [Kubernetes](http://kubernetes.io/) clusters. It randomly deletes Kubernetes (k8s) pods in the cluster encouraging and validating the development of failure-resilient services.
 
@@ -117,8 +117,8 @@ Docker images for kube-monkey can be found at [DockerHub](https://hub.docker.com
 Clone the repository and build the container.
 
 ```bash
-go get github.com/asobti/kube-monkey
-cd $GOPATH/src/github.com/asobti/kube-monkey
+go get github.com/BitRacer/kube-monkey
+cd $GOPATH/src/github.com/BitRacer/kube-monkey
 make build
 make container
 ```
@@ -126,7 +126,7 @@ make container
 ## Configuring
 kube-monkey is configured by environment variables or a toml file placed at `/etc/kube-monkey/config.toml` and expects the configmap to exist before the kube-monkey deployment.
 
-Configuration keys and descriptions can be found in [`config/param/param.go`](https://github.com/asobti/kube-monkey/blob/master/config/param/param.go)
+Configuration keys and descriptions can be found in [`config/param/param.go`](https://github.com/BitRacer/kube-monkey/blob/master/config/param/param.go)
 
 #### Example config.toml file
 ```toml
@@ -211,7 +211,7 @@ Note if the environment variable does not exist, the notification call will NOT 
 
 2. Run kube-monkey as a k8s app within the Kubernetes cluster, in a namespace that has permissions to kill Pods in other namespaces (eg. `kube-system`).
 
-See dir [`examples/`](https://github.com/asobti/kube-monkey/tree/master/examples) for example Kubernetes yaml files.
+See dir [`examples/`](https://github.com/BitRacer/kube-monkey/tree/master/examples) for example Kubernetes yaml files.
 
 3. You should be able to see debug logs by `kubectl logs -f deployment.apps/kube-monkey --namespace=kube-system`  here the `deployment.apps/kube-monkey` is the k8s deployment for kube-monkey.
 
@@ -223,11 +223,11 @@ Helm can then be executed using default values
 ```bash
 helm install --name $release helm/kubemonkey
 ```
-refer [kube-monkey helm chart README.md](https://github.com/asobti/kube-monkey/blob/master/helm/kubemonkey/README.md)
+refer [kube-monkey helm chart README.md](https://github.com/BitRacer/kube-monkey/blob/master/helm/kubemonkey/README.md)
 
 ## Logging
 
-kube-monkey uses [glog](github.com/golang/glog) and supports all command-line features for glog. To specify a custom v level or a custom log directory on the pod, see  `args: ["-v=5", "-log_dir=/path/to/custom/log"]` in the [example deployment file](https://github.com/asobti/kube-monkey/tree/master/examples/deployment.yaml)
+kube-monkey uses [glog](github.com/golang/glog) and supports all command-line features for glog. To specify a custom v level or a custom log directory on the pod, see  `args: ["-v=5", "-log_dir=/path/to/custom/log"]` in the [example deployment file](https://github.com/BitRacer/kube-monkey/tree/master/examples/deployment.yaml)
 
 > **Standardized glog levels `grep -r V\([0-9]\) *`**
 >
@@ -254,7 +254,7 @@ versions of Kubernetes are compatible.
 ## Instructions on how to get this working on OpenShift 3.x
 
 ```
-git clone https://github.com/asobti/kube-monkey.git
+git clone https://github.com/BitRacer/kube-monkey.git
 cd examples
 oc login http://someserver/ -u system:admin
 oc project kube-system
@@ -268,4 +268,4 @@ oc volume dc/kube-monkey --add --name=kubeconfigmap -m /etc/kube-monkey -t confi
 
 ## Ways to contribute
 
-See [How to Contribute](https://github.com/asobti/kube-monkey/blob/master/CONTRIBUTING.md)
+See [How to Contribute](https://github.com/BitRacer/kube-monkey/blob/master/CONTRIBUTING.md)
